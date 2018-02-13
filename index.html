@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokemon Battle Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+
+    <div class="jumbotron">
+      <h1 class="text-center">Pokemon Battle</h1>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12" id="instructions">
+          <p>Mewtwo starts the game with random HP.</p>
+          <p>There are four pokemon below. By clicking on a pokemon, you will add a specific amount of damage to be dealt.</p>
+          <p>You win the game by matching your damage dealt to Mewtwo's HP. You lose the game if your damage dealt goes above Mewtwo's HP.</p>
+          <p>The strength of each pokemon is hidden until you click on it.</p>
+          <p>Each time the game starts, the game will change the strength of the pokemon.</p>
+        </div>  
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12" id="mewtwo">
+          <img src="assets/images/mewtwo.jpg" id="mewtwo-photo" style="width:100%; height: 100%;">
+          <h1>HP: <span id="number-to-guess"></span></h1>
+          <h1>Current Damage: <span id="total"></span></h1>
+        </div>
+      </div>
+
+
+      <div class="container2">
+        <div class="row img-fluid crystals" alt="Responsive image" id="pokemon1">
+        </div>
+
+         <div class="row img-fluid crystals" alt="Responsive image" id="pokemon2">
+        </div>
+
+         <div class="row img-fluid crystals" alt="Responsive image" id="pokemon3">
+        </div>
+
+         <div class="row img-fluid crystals" alt="Responsive image" id="pokemon4">
+        </div>
+      </div>
+    </div>
+
+  <!-- JAVASCRIPT  -->
+  <!-- ========================================= -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+  
+</body>
+</html>
